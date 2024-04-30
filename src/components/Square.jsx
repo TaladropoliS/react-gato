@@ -3,7 +3,6 @@ export const Square = ({children, isSelected, updateBoard, index}) => {
     const className = `px-1 py-4 border rounded ${isSelected ? 'bg-dark border-primary text-primary fw-bold' : ''}`
     const handleClick = () => {
         updateBoard(index)
-        console.log('click')
     }
     return (
         <div className='col'>
